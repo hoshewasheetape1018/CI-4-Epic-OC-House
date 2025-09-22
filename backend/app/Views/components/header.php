@@ -15,12 +15,38 @@
 }
 
 /* HEADER STYLES */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: #B2F2FF; /* light blue */
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00AFD2, #005A6C);
+  border-radius: 6px;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #5B9ED9, #005A6C);
+}
+
+
 header {
+    position: relative;
+    z-index: 1;
     overflow: hidden;
     background: linear-gradient(90deg, #B2F2FF 0%, #5B9ED9 100%);
     display: flex;
     justify-content: space-around;
     padding: 1.2rem;
+    border-bottom: 3px solid #005A6C;
 
     nav {
         display: flex;
@@ -28,7 +54,7 @@ header {
     }
 
     img {
-        margin:-10px;
+        margin: -10px;
     }
 }
 
@@ -120,7 +146,7 @@ button.primary:hover {
 }
 
 button.secondary:hover {
-    background:linear-gradient(0deg, #B2F2FF 0.48%, #00AFD2 83%)
+    background: linear-gradient(0deg, #B2F2FF 0.48%, #00AFD2 83%)
 }
 
 
@@ -129,17 +155,19 @@ button.action:hover {
 
 }
 
-    button.cta {
+button.cta {
 
 
-        height: 4.5rem;
-        border-radius: 25px;
-        padding-inline: 3.5rem;
+    height: 4.5rem;
+    border-radius: 25px;
+    padding-inline: 3.5rem;
 
-    }
+}
 
-    /* BODY STYLES */
+/* BODY STYLES */
 body {
+    position: relative;
+    z-index: 0;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -166,9 +194,13 @@ body {
 
     h2 {
         font-size: 36px;
-        text-shadow: 0px 2px 4px #1E1E1E;
+        text-shadow: 0px 1px 3px #000000ff;
     }
 
+    img {
+        max-width: 100%;
+        object-fit: cover;
+    }
 
     section {
         height: 100vh;
@@ -186,13 +218,28 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        background: url("https://file.garden/ZrIPgCGn9kADc89z/Genopals/hero_bg%20art.png");
+        background-image: url("https://file.garden/ZrIPgCGn9kADc89z/Genopals/better_hero_bg%20artge2.png");
         padding-bottom: 4rem;
-        background-size:cover;
-        background-position:center;
+        background-size: cover;
+        background-position: center;
+        animation: panDown 0.8s ease-out forwards;
+
 
         h1 {
-            margin-bottom:1.1rem;
+            color: #F6E8FF;
+            text-shadow:
+                -2px -2px 0 #747AFF,
+                2px -2px 0 #747AFF,
+                -2px 2px 0 #747AFF,
+                2px 2px 0 #747AFF,
+                0px -2px 0 #747AFF,
+                -2px 0px 0 #747AFF,
+                2px 0px 0 #747AFF,
+                0px 2px 0 #747AFF;
+            margin-bottom: 1.1rem;
+
+            background: linear-gradient(90deg, rgba(0, 175, 210, 0) 0%, rgba(0, 175, 210, 1.0) 20%, rgba(0, 175, 210, 1.0) 80%, rgba(0, 175, 210, 0) 100%);
+            padding: 0.1rem;
         }
     }
 
@@ -203,7 +250,7 @@ body {
         top: -11vh;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.318182) 4.33%, #FFFFFF 8.65%, #EBF4F5 100%);
         padding-top: 7rem;
-  
+
         .container h2 {
             margin-bottom: 0;
 
@@ -213,6 +260,21 @@ body {
     section#section3 {
         background: linear-gradient(180deg, #00729E 0%, #005A6C 100%);
 
+   h2#title {
+            color:white;
+        }
+
+        div.container {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            margin-bottom:1rem;
+            h2 {
+                margin:0.5rem;
+            }
+        }
+
+     
     }
 
 
@@ -241,7 +303,7 @@ body {
         flex-direction: column;
         align-items: center;
         border: 9px solid transparent;
-          border-image: linear-gradient(180deg, #5B9ED9 0%, #B2F2FF 50%, #5B9ED9 90%) 1;
+        border-image: linear-gradient(180deg, #5B9ED9 0%, #B2F2FF 50%, #5B9ED9 90%) 1;
         background-color: #EBF4F5;
         gap: 2rem;
         filter: drop-shadow(0px 6px 16.6px #B6B6B6);
@@ -253,50 +315,51 @@ body {
         display: flex;
         gap: 2rem;
         align-items: center;
-        width:90%;
-      
+        width: 90%;
+
 
         div.feat-item {
-            background-color: red;
-            height:100%;
-            width:50%;
-            display:flex;
-            flex-direction:column;
+            padding-top: 0.5rem;
+            height: 100%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
             align-items: center;
+            background-color: #D0E2EE;
+
         }
 
         div.stat-container {
-            background-color: #D0E2EE;
             width: 70%;
-            padding-inline:1.5rem;      
-            
-            display:flex;
-            gap:1.5rem;
-            align-items:center;
+            padding-inline: 1.5rem;
+            margin-bottom: -0.7rem;
+            display: flex;
+            gap: 1.4rem;
+            align-items: center;
 
             h4 {
-                width:100px;
-            font-family: 'Inter';
-            color: var(--primary);
-            margin-bottom:0.5rem;
-        }
+                width: 50px;
+                font-family: 'Inter';
+                color: var(--primary);
+
+            }
 
             .stat-box {
-                
+
                 background-color: #EBF4F5;
-                height:20px;
-                width:300px;
-                padding:0.5rem;
+                height: 20px;
+                width: 300px;
+                padding: 0.5rem;
                 filter: drop-shadow(0px 3px 2px #B6B6B6);
-                display:flex;
-                align-items:center;
+                display: flex;
+                align-items: center;
 
                 .stat-bar {
                     height: 90%;
                     width: 30%;
                 }
 
-                div#affection {
+                div#health {
                     background: linear-gradient(90deg, #5B9ED9 0%, #B2F2FF 100%);
                 }
 
@@ -306,15 +369,26 @@ body {
 
                 div#hunger {
                     background: linear-gradient(90deg, #005A6C 0%, #007EB0 100%);
-                    
+
                 }
             }
         }
 
-       
+
     }
 
 
+}
+
+/* BODY ANIMATIONS */
+@keyframes panDown {
+    from {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 /* FOOTER STYLES */
@@ -371,7 +445,8 @@ footer {
 
 <body>
     <header>
-        <a href="/"><img src="https://file.garden/ZrIPgCGn9kADc89z/Genopals/genopals-logo.png" alt="Genopals logo" height="65"></a>
+        <a href="/"><img src="https://file.garden/ZrIPgCGn9kADc89z/Genopals/genopals-logo.png" alt="Genopals logo"
+                height="65"></a>
         <nav>
             <button class="primary"> <a href="/">CARE </a></button>
             <button class="primary"> <a href="/">INVENTORY </a></button>
