@@ -11,7 +11,6 @@
 <style>
 :root {
     --primary: #007EB0;
-    /*--secondary: ; */
 }
 
 /* HEADER STYLES */
