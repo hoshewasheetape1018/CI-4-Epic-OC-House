@@ -11,8 +11,10 @@
 
     <section id="moodboard">
         <div class="container">
-            <h2> MoodBoard Page </h2>
-
+            <div>
+            <h2> MOODBOARD </h2>
+                    <h4> Visual design guide for Genopals. </h4>
+            </div>
             <div class="moodboard-grid">
 
                 <div>
