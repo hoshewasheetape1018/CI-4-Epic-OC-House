@@ -45,6 +45,9 @@
   background: linear-gradient(180deg, #5B9ED9, #005A6C);
 }
 
+a {
+    text-decoration: none;
+}
 
 header {
     position: relative;
@@ -385,6 +388,28 @@ body {
 
     }
 
+    .news-card {
+        margin: 1.5rem;
+        padding-inline: 10rem;
+        width: auto;
+        background-color: #B2F2FF;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        flex-direction: column;
+        border: 5px solid #007EB0;
+       
+        h2 {
+            margin-bottom:1.3rem;
+        }
+        p
+        { font-family: 'Inter';
+        color: var(--primary);
+        margin-top:0;
+        margin-bottom:1.5rem;
+    }
+    }
 
 }
 
