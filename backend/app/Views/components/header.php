@@ -5,7 +5,7 @@
             <button class="primary"> <a href="/">CARE </a></button>
             <button class="primary"> <a href="/">INVENTORY </a></button>
             <button class="primary"> <a href="/">SHOP </a></button>
-            <button class="primary"> <a href="/">NEWS </a></button>
+            <button class="primary"> <a href="/news">NEWS </a></button>
             <button class="action"> <a href="/">LOG IN </a></button>
         </nav>
     </header>

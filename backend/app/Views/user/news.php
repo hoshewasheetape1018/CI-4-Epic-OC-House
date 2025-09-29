@@ -9,7 +9,7 @@
 
     <!-- start of news page -->
 
-    <section>
+    <section id="news">
 <div class="container">
     <a href="/news/moodboard">
     <div class="news-card">
