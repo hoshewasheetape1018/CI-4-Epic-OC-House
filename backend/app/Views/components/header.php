@@ -1,3 +1,4 @@
+
     <header>
         <a href="/"><img src="https://file.garden/ZrIPgCGn9kADc89z/Genopals/genopals-logo.png" alt="Genopals logo"
                 height="65"></a>
