@@ -8,8 +8,11 @@
     <?= view('components/header') ?>
 
     <!-- main content -->
-    <section>
-    Sign up page
+    <section id="signup">
+        <div class="container">
+                Sign up page
+
+</div>
     </section>
         </section>
 
