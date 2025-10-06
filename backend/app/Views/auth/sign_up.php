@@ -26,7 +26,7 @@
                 </div>
                 <div>
                     <button class="primary"> <a href="/login"> BACK </a></button>
-                    <button class="secondary" type="submit"><a> NEXT </a></button>
+                    <button class="secondary" type="submit"><a> SIGNUP </a></button>
                 </div>
             </form>
 
