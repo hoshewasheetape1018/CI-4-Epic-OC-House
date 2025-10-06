@@ -7,6 +7,6 @@
             <button class="primary"> <a href="/">INVENTORY </a></button>
             <button class="primary"> <a href="/">SHOP </a></button>
             <button class="primary"> <a href="/news">NEWS </a></button>
-            <button class="action"> <a href="/">LOG IN </a></button>
+            <button class="action"> <a href="/login">LOG IN </a></button>
         </nav>
     </header>
