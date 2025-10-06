@@ -677,7 +677,8 @@
                 background: linear-gradient(180deg, rgba(255, 255, 255, 0) 48%,
                         rgba(255, 255, 255, 0.32) 60%,
                         #ffffff 76%),
-                    url("https://file.garden/ZrIPgCGn9kADc89z/Genopals/better_hero_bg%20artge2.png") background-size: cover;
+                    url("https://file.garden/ZrIPgCGn9kADc89z/Genopals/better_hero_bg%20artge2.png");
+                background-size: cover;
                 background-position: center;
                 display: flex;
                 flex-direction: column;
