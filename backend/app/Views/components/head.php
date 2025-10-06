@@ -629,6 +629,11 @@
 
 
         section#login {
+
+            .container {
+                padding-bottom: 3rem;
+            }
+
             .login-container {
                 display: flex;
                 height: 100%;
@@ -669,11 +674,10 @@
             .login-img {
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
-                        rgba(255, 255, 255, 0.32) 40%,
-                        #ffffff 100%),
-                    url("https://file.garden/ZrIPgCGn9kADc89z/Genopals/better_hero_bg%20artge2.png");
-                background-size: cover;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 48%,
+                        rgba(255, 255, 255, 0.32) 60%,
+                        #ffffff 76%),
+                    url("https://file.garden/ZrIPgCGn9kADc89z/Genopals/better_hero_bg%20artge2.png") background-size: cover;
                 background-position: center;
                 display: flex;
                 flex-direction: column;
@@ -691,163 +695,171 @@
                     align-items: center;
                     margin-bottom: 1.3rem;
                 }
+
+             
             }
-        }
-
-        .container {
-            min-height: 80vh;
-            width: 80vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 9px solid transparent;
-            border-image: linear-gradient(180deg, #5B9ED9 0%, #B2F2FF 50%, #5B9ED9 90%) 1;
-            background-color: #EBF4F5;
-            gap: 2rem;
-            filter: drop-shadow(0px 6px 16.6px #B6B6B6);
-
-        }
-
-        .card {
-            background: #EBF4F5;
-            border: 2px solid var(--primary);
-            border-radius: 10px;
-            padding: 1.5rem;
-            filter: drop-shadow(0px 6px 5px #B6B6B6);
-
-            button {
-                a {
-                    font-size: 1.3rem;
+               form > div:nth-of-type(3){
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
                 }
-            }
         }
 
-        div#features1 {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            width: 90%;
-
-
-            div.feat-item {
-                padding-top: 0.5rem;
-                height: 100%;
-                width: 30%;
+            .container {
+                min-height: 80vh;
+                width: 80vw;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                background-color: #D0E2EE;
+                border: 9px solid transparent;
+                border-image: linear-gradient(180deg, #5B9ED9 0%, #B2F2FF 50%, #5B9ED9 90%) 1;
+                background-color: #EBF4F5;
+                gap: 2rem;
+                filter: drop-shadow(0px 6px 16.6px #B6B6B6);
 
             }
 
-            div.stat-container {
-                width: 70%;
-                padding-inline: 1.5rem;
-                margin-bottom: -0.7rem;
-                display: flex;
-                gap: 1.4rem;
-                align-items: center;
+            .card {
+                background: #EBF4F5;
+                border: 2px solid var(--primary);
+                border-radius: 10px;
+                padding: 1.5rem;
+                filter: drop-shadow(0px 6px 5px #B6B6B6);
 
-                h4 {
-                    width: 50px;
-                    font-family: 'Inter';
-                    color: var(--primary);
+                button {
+                    a {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+
+            div#features1 {
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+                width: 90%;
+
+
+                div.feat-item {
+                    padding-top: 0.5rem;
+                    height: 100%;
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: #D0E2EE;
 
                 }
 
-                .stat-box {
-
-                    background-color: #EBF4F5;
-                    height: 20px;
-                    width: 300px;
-                    padding: 0.5rem;
-                    filter: drop-shadow(0px 3px 2px #B6B6B6);
+                div.stat-container {
+                    width: 70%;
+                    padding-inline: 1.5rem;
+                    margin-bottom: -0.7rem;
                     display: flex;
+                    gap: 1.4rem;
                     align-items: center;
 
-                    .stat-bar {
-                        height: 90%;
-                        width: 30%;
-                    }
-
-                    div#health {
-                        background: linear-gradient(90deg, #5B9ED9 0%, #B2F2FF 100%);
-                    }
-
-                    div#energy {
-                        background: linear-gradient(90deg, #E99F00 0%, #FFD06A 100%);
-                    }
-
-                    div#hunger {
-                        background: linear-gradient(90deg, #005A6C 0%, #007EB0 100%);
+                    h4 {
+                        width: 50px;
+                        font-family: 'Inter';
+                        color: var(--primary);
 
                     }
+
+                    .stat-box {
+
+                        background-color: #EBF4F5;
+                        height: 20px;
+                        width: 300px;
+                        padding: 0.5rem;
+                        filter: drop-shadow(0px 3px 2px #B6B6B6);
+                        display: flex;
+                        align-items: center;
+
+                        .stat-bar {
+                            height: 90%;
+                            width: 30%;
+                        }
+
+                        div#health {
+                            background: linear-gradient(90deg, #5B9ED9 0%, #B2F2FF 100%);
+                        }
+
+                        div#energy {
+                            background: linear-gradient(90deg, #E99F00 0%, #FFD06A 100%);
+                        }
+
+                        div#hunger {
+                            background: linear-gradient(90deg, #005A6C 0%, #007EB0 100%);
+
+                        }
+                    }
+                }
+
+
+
+            }
+
+
+
+            /* BODY ANIMATIONS */
+            @keyframes panDown {
+                from {
+                    transform: translateY(-10px);
+                }
+
+                to {
+                    transform: translateY(0);
                 }
             }
 
-
-
-        }
-
-
-
-        /* BODY ANIMATIONS */
-        @keyframes panDown {
-            from {
-                transform: translateY(-10px);
-            }
-
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        /* FOOTER STYLES */
-        footer {
-            background-color: black;
-            font-family: "Inter";
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 1.5rem;
-
-            h1 {
-                font-family: "Playfair Display";
-                font-size: 2.5rem;
-                margin: 0;
-                color: white;
-            }
-
-            p {
-                color: #D8D8D8;
-                width: 60vw;
-                text-align: justify;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 1rem;
-                line-height: 1.5rem;
-            }
-
-            div {
+            /* FOOTER STYLES */
+            footer {
+                background-color: black;
+                font-family: "Inter";
                 display: flex;
-                justiy-content: space-between;
-                padding-inline: 1.5rem;
-                margin: 0;
+                justify-content: center;
+                flex-direction: column;
                 align-items: center;
+                text-align: center;
+                padding: 1.5rem;
 
-                nav {
-                    display: flex;
-                    gap: 1.5rem;
+                h1 {
+                    font-family: "Playfair Display";
+                    font-size: 2.5rem;
+                    margin: 0;
+                    color: white;
                 }
 
-                a {
-                    text-decoration: none;
+                p {
                     color: #D8D8D8;
-
+                    width: 60vw;
+                    text-align: justify;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
                 }
 
+                div {
+                    display: flex;
+                    justiy-content: space-between;
+                    padding-inline: 1.5rem;
+                    margin: 0;
+                    align-items: center;
+
+                    nav {
+                        display: flex;
+                        gap: 1.5rem;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #D8D8D8;
+
+                    }
+
+                }
             }
         }
     </style>
